@@ -9,10 +9,8 @@
       "getting-started/sdlc",
       "getting-started/cube",
       "getting-started/graph",
-      "getting-started/services"
-    ],
-    "Get Involved": [
-      "about/getinvolved"
+      "getting-started/services",
+      "get-involved/terms-of-service"
     ]
   }
 }

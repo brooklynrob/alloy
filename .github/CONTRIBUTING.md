@@ -1,31 +1,36 @@
 # Contributing to Alloy
 ## Ways of Contributing 
 ### Participate in the Pilot
-As described in the [open sourcing timeline](../..docs/about/timeline.md), in Q1 2020 (i.e., now) FINOS is conducting a pilot with organizations interested evaluating PURE/Alloy mostly FINOS bank members. 
+In Q1 2020 (i.e., now) FINOS is conducting a pilot with member organizations interested in evaluating PURE/Alloy. For more information about the pilot and how to generally get involved with Alloy see the [Alloy page on finos.org](https://www.finos.org/alloy).
 
-#### Shared Modeling in Alloy (**)
-During the 
+#### Shared Modeling in Alloy
+During the pilot, modelers will collaborate using Alloy to build shared models. Examples of the types of models that might be modeled during the pilot include:
 * FX options
 * RFQ
-* ESG
+* ESG Data
 
 ### Suggest Modeling Use Cases
+If you have suggestions or ideas for modeling use cases for which Alloy may be appropriate, we'd love to hear your ideas -- send a note with your suggestion to the [Alloy General List](alloy@finos.org).
 
 ### Help Build the Documentation
 #### Suggest Topics
-#### Make Suggested Edits and Adds
+Suggesting topics you think should be included in this documentation site is a great, easy way to get involved with Alloy. A good way of a suggesting a topic for the docs site is by [opening an issue in our Github repo](https://github.com/finos/purealloy/issues/new/choose). Ideas are also welcome via the [Alloy General List](alloy@finos.org).
+
+#### Make Suggested Edits and Adds in the Documentation Site
+We welcome your help building out the documentation site. The process to make changes to the documentation site is the same as that which is described in the ["Making Code (Including Documentation) Changes" section](CONTRIBUTING.md#making-code-including-documentation-changes).
 
 ### Propose Changes (Make Pull Requests) to Underlying PURE and Alloy Code (Phase 2)
-
+In phase 2, once the underlying code to PURE and Alloy have been open sourced into FINOS and source code made available to the public, the project will welcome pull requests to these code bases. 
 
 ## Making Code (Including Documentation) Changes
 ### Prerequisites
 #### Github ID
-#### FINOS Contributor License Agreement
-A CLA is a document that specifies how a project is allowed to use your
-contribution; they are commonly used in many open source projects.
+Alloy makes use of both GitLab and GitHub infrastructure but, consistent with the FINOS infrastructure strategy, uses GitHub accounts as its default for authentication. All committers to FINOS repos, including pilot phase modelers, must have GitHub IDs.
 
-_NOTE:_ Commits and pull requests to FINOS project repositories, including Alloy, will only be accepted from those contributors with an active, executed Individual Contributor License Agreement (ICLA) with FINOS OR who are covered under an existing and active Corporate Contribution License Agreement (CCLA) executed with FINOS. See the [Contribute page on the FINOS Wiki for more information](https://finosfoundation.atlassian.net/wiki/spaces/FINOS/pages/83034172/Contribute). Commits from individuals not covered under an ICLA or CCLA will be flagged and blocked by the FINOS ["CLA Bot" tool](https://github.com/finos/cla-bot). Please note that some CCLAs require individuals/employees to be explicitly named on the CCLA. PRs submitted to the purealloy project cannot be accepted until you have a CLA in place with the Foundation.
+#### FINOS Contributor License Agreement ("CLA")
+A Contributor License Agreement ("CLA") is a document that specifies how a project is allowed to use your contribution; they are commonly used in many open source projects.
+
+_NOTE:_ Commits and pull requests to FINOS project repositories, including Alloy, will only be accepted from those contributors with an active, executed Individual Contributor License Agreement (ICLA) with FINOS OR who are covered under an existing and active Corporate Contribution License Agreement (CCLA) executed with FINOS. See the [Contribute page on the FINOS Wiki for more information](https://finosfoundation.atlassian.net/wiki/spaces/FINOS/pages/83034172/Contribute). Commits from individuals not covered under an ICLA or CCLA will be flagged and blocked by the FINOS ["CLA Bot" tool](https://github.com/finos/cla-bot). Please note that some CCLAs require individuals/employees to be explicitly named on the CCLA. PRs submitted to the purealloy project cannot be accepted until you have a CLA in place with the Foundation. CLAs are also required for modelers participating in the pilot. 
 
 * Need an ICLA? Unsure if you are covered under an existing CCLA? Email [help@finos.org](mailto:help@finos.org?subject=CLA)
 
@@ -33,12 +38,13 @@ _NOTE:_ Commits and pull requests to FINOS project repositories, including Alloy
 
 1. Read our [contribution guidelines](.github/CONTRIBUTING.md) and [Community Code of Conduct](https://www.finos.org/code-of-conduct)
 2. Fork the Alloy repository (<https://github.com/finos/purealloy/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Make and test locally your changes
-4. Commit your changes (`git commit -am 'Add some fooBar'`)
+3. Create your feature branch (`git checkout -b feature/fooBar`)
+4. Make and test locally your changes
+5. Add your changes (`git add <filename containing fooBar change>`)
+4. Commit your changes (`git commit -m 'Add some fooBar'`)
 5. Push to the branch (`git push origin feature/fooBar`)
 6. Optional but Recommeded: Do a build in/from your fork; further evaluate and test
-7. If all looks good, propose a pull request into the [FINOS PURE/Alloy GitHub Repo](github.com/finos/purealloy) from your fork.
+7. If all looks good, propose a pull request into the [FINOS PURE/Alloy GitHub Repo](https://github.com/finos/purealloy/pull/new/master) from your fork.
 
 #### Proposing and Submitting Pull Requests (Code & Docs)
 To make review of PRs easier, please:
@@ -60,8 +66,11 @@ To make review of PRs easier, please:
 * Limit the first line to 72 characters or less
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/master
 ### Running the Docs Site Locally on Your Machine
 In order to make edits to the website itself, you'll probably want to run the website locally, you must have:
 - A Git client installed, to checkout the code from github.com/finos/purealloy (`master` branch); note that the `git` command must be available via command-line, as it's needed to run the `build-site.sh` script
@@ -88,6 +97,8 @@ To learn more about Docusaurus see
 * https://finosfoundation.atlassian.net/wiki/spaces/FDX/pages/844759075/Using+Docusaurus+recommended 
 * https://docusaurus.io
 
+*Note* [The documentation build script](https://github.com/finos/purealloy/blob/master/build-site.sh) can be configued to pull in and include files from GitLab.com repositories housing modeling documentation into the GitHub pages / Docusaurus powered site.
+
 
 ## Contributing Issues
 ### Prerequisites
@@ -103,3 +114,15 @@ To learn more about Docusaurus see
 * Please use [Markdown formatting](https://help.github.com/categories/writing-on-github/)
 liberally to assist in readability.
   * [Code fences](https://help.github.com/articles/creating-and-highlighting-code-blocks/) for exception stack traces and log entries, for example, massively improve readability.
+
+## On-line Collaboration
+* [Alloy General List](https://groups.google.com/a/finos.org/forum/#!forum/alloy)
+    * Subscribe w/ email to [alloy+subscribe@finos.org](alloy+subscribe@finos.org)
+    * Post with email to [alloy@finos.org](alloy+subscribe@finos.org)
+
+* Github / Gitlab Issues & Kanban
+    * Github Issues (https://github.com/finos/purealloy/issues)
+    * Github Kanban(https://github.com/orgs/finos/projects/5)
+
+* Alloy Updates from FINOS
+    * [Subscribe at https://www.finos.org/alloy](https://www.finos.org/alloy)
