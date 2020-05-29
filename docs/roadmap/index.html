@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Alloy Roadmap · alloy</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="### Phase 0 Goals"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Alloy Roadmap · alloy"/><meta property="og:type" content="website"/><meta property="og:url" content="/https://brooklynrob.github.io/alloy/alloy/"/><meta property="og:description" content="### Phase 0 Goals"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/alloy/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-blue.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-89349362-7', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,500,700,900|Roboto+Condensed:400,500,700,900|Source+Code+Pro:400,500,700,900&amp;display=swap"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/alloy/js/scrollSpy.js"></script><link rel="stylesheet" href="/alloy/css/main.css"/><script src="/alloy/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/alloy/"><img class="logo" src="/alloy/img/alloy.svg" alt="alloy"/><h2 class="headerTitleWithLogo">alloy</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/alloy/docs/getting-started/studio" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/studio">Studio</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/language">Language</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/released-functions">Released Functions</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/upcoming-functions">Upcoming Functions</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/execution">Execution</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/sdlc">SDLC</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/pilot-model-governance">Pilot Model Governance</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/cube">Cube</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/graph">Graph</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/services">Services</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/get-involved/terms-of-service">Legal</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/contribute">Contribute</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/alloy/docs/roadmap">Roadmap</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Alloy Roadmap</h1></header><article><div><span><h3><a class="anchor" aria-hidden="true" id="phase-0-goals"></a><a href="#phase-0-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 0 Goals</h3>
+<ul>
+<li>Stand-up and deploy an external instance of Alloy for shared modeling - DONE</li>
+<li><a href="https://www.youtube.com/watch?v=fPUYUt9Yr_I">Open Source Strategy Forum announcement</a> of Goldman Sachs intention to open source Alloy and the associated roadmap for that work (i.e., this doc) - DONE</li>
+<li>Commence internal code evaluation and preparation for open sourcing - DONE</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="phase-1-in-progress"></a><a href="#phase-1-in-progress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 (In Progress)</h2>
+<h3><a class="anchor" aria-hidden="true" id="phase-1-goals"></a><a href="#phase-1-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Goals</h3>
+<h4><a class="anchor" aria-hidden="true" id="phase-1-goal-1-evaluate-shared-modeling-using-alloy-and-and-define-dollaboration-model-for-further-model-development"></a><a href="#phase-1-goal-1-evaluate-shared-modeling-using-alloy-and-and-define-dollaboration-model-for-further-model-development" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Goal 1: Evaluate shared modeling using Alloy and and define dollaboration model for further model development</h4>
+<ul>
+<li><p>Evaluate how shared modeling can work using Alloy and define the best process to work together, by assessing:</p>
+<ul>
+<li><p>Governance process</p></li>
+<li><p>Collaboration amongst banks</p></li>
+<li><p>Technical solution</p></li>
+</ul></li>
+<li><p>Success Criteria</p>
+<ul>
+<li>Basic fluency in Alloy by non-GS modelers using Alloy</li>
+<li>Functional areas of interest identified and working groups to model in those areas commenced</li>
+<li>Feedback on Alloy shared with Goldman development team such that said feedback can be incorporated, as feasible, into the version of Alloy released as open source at the start of Phase 2</li>
+</ul></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="phase-1-goal-2-using-alloy-collectively-develop-a-model-or-model-extension"></a><a href="#phase-1-goal-2-using-alloy-collectively-develop-a-model-or-model-extension" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Goal 2: Using Alloy collectively develop a model or model extension</h4>
+<ul>
+<li><p>Find a good use case, with propensity for value creation through shared modeling and data shaping,  and then work on (i.e., model) something “production relevant”</p>
+<ul>
+<li><p>Ideally shared models can and should also be contributed back to respective standards bodies such as ISDA for derivatives (e.g., proposed changes to the CDM)</p></li>
+<li><p>FINOS members and community can provide further momentum by implementing models and supporting standards by convention</p></li>
+<li><p>Stretch goal to submut changed back to respective standards body (ISDA) and, better still, see it accepted into the standard</p></li>
+</ul></li>
+<li><p>Success Criteria</p>
+<ul>
+<li>Support of standards body (ISDA)</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="phase-1-milestones"></a><a href="#phase-1-milestones" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Milestones</h3>
+<h4><a class="anchor" aria-hidden="true" id="launch-pilot-group"></a><a href="#launch-pilot-group" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Launch Pilot Group</h4>
+<ul>
+<li>Pilot Kick-off (January 29) - Completed</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="modeling"></a><a href="#modeling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modeling</h4>
+<ul>
+<li>Import and ready ISDA CDM in Alloy - Completed</li>
+<li>Define, organize, and launch modeling working grous
+<ul>
+<li>FX Option - Launched</li>
+<li>Commodities Reference Data - Launched</li>
+<li>Sustainability / Renewable energy Working Group - Proposed</li>
+</ul></li>
+<li>Define potential areas of further modeling collaboration after pilot ends
+<ul>
+<li>Consider relationship with other FINOS projects like Financial Objects</li>
+<li>Additional standards and/or standards bodies to collaborte with</li>
+</ul></li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="fx-option-working-group"></a><a href="#fx-option-working-group" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FX Option Working Group</h5>
+<ul>
+<li>Step 1 (2nd April 2020 - 26th May): Milestone - CDM FX Option Model Change
+<ul>
+<li>Products: FX vailla Options, FX Barrier Option</li>
+<li>Review FpML FxOption model against CDM</li>
+</ul></li>
+<li>Step 2</li>
+<li>Step 3 2nd July 2020 - 6th August 2020
+<ul>
+<li>Analyze other use cases</li>
+</ul></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="open-source-preparations"></a><a href="#open-source-preparations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Open Source Preparations</h4>
+<h5><a class="anchor" aria-hidden="true" id="code-readinesshttpsgithubcomfinosalloylabelscode20readiness"></a><a href="#code-readinesshttpsgithubcomfinosalloylabelscode20readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/finos/alloy/labels/Code%20Readiness">Code Readiness</a></h5>
+<ul>
+<li><a href="https://github.com/finos/alloy/issues/119">Code Modulization</a></li>
+<li>Milestone 2</li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="build-readiness"></a><a href="#build-readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Build Readiness</h5>
+<ul>
+<li><a href="https://github.com/finos/alloy/issues/93">Define GitHub Actions for building and testing Docker images</a></li>
+<li>Milestone 2</li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="developer-readinesss"></a><a href="#developer-readinesss" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Developer Readinesss</h5>
+<ul>
+<li>Milestone 1</li>
+<li>Milestone 2</li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="finos-hosted-instace-readiness"></a><a href="#finos-hosted-instace-readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FINOS Hosted Instace Readiness</h5>
+<ul>
+<li>Milestone 1</li>
+<li>Milestone 2</li>
+</ul>
+<h5><a class="anchor" aria-hidden="true" id="communication-and-change-readiness"></a><a href="#communication-and-change-readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Communication and Change Readiness</h5>
+<ul>
+<li><a href="https://github.com/finos/alloy/issues/26">Training Video Produced and Posted</a></li>
+<li>Press Release Prepared and Embargoed</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="phase-1-meeting-minutes"></a><a href="#phase-1-meeting-minutes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Meeting Minutes</h3>
+<ul>
+<li><a href="https://github.com/finos/alloy/tree/master/meeting-minutes/general-meeting">Alloy General Monthly Meeting Minutes</a></li>
+<li><a href="https://github.com/finos/alloy/tree/master/meeting-minutes/pilot-project-meeting-minutes">Alloy Pilot Meeting Minutes</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="phase-2-milestone-plan--roadmap-tentative"></a><a href="#phase-2-milestone-plan--roadmap-tentative" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 2 Milestone Plan &amp; Roadmap (Tentative)</h2>
+<ul>
+<li>Milestone 2.1 – Code uplift</li>
+<li>Milestone 2.2 – <a href="https://github.com/finos/alloy/issues?q=is%3Aopen+is%3Aissue+label%3A%22Milestone%3A+Code+Open+Sourced+%281st+Wave%29%22"><em><strong>Code Release - 1st Wave (Target Summer - Early Fall 2020)</strong></em>.</a>
+<ul>
+<li><em>Code for SDLC, Execution, Studio, PURE System (tentative scope) made available in GitHub and/or GitLab under Apache 2.0 license</em>*</li>
+<li>CI build + release process</li>
+<li>Deploy pipeline from code to demo environement on FINOS infrastructure (alloy.finos.org/studio)</li>
+</ul></li>
+<li>Milestone 2.3 - (More) Documentation
+<ul>
+<li>Video tutorials for Studio</li>
+<li>Guide to building and deploying</li>
+<li>Guide to developing in Alloy</li>
+</ul></li>
+<li>Milestone 2.4 - Second batch of code open sourced
+<ul>
+<li>Code for Cube, Graph, Services (tentative scope) made available in GitHub and/or Gitlab under Apache 2.0 license</li>
+<li>Deploy demo database in demo environment in FINOS infrastructure to demonstrate execution</li>
+</ul></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/alloy/docs/contribute"><span class="arrow-prev">← </span><span>Contribute</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#phase-1-in-progress">Phase 1 (In Progress)</a><ul class="toc-headings"><li><a href="#phase-1-goals">Phase 1 Goals</a></li><li><a href="#phase-1-milestones">Phase 1 Milestones</a></li><li><a href="#phase-1-meeting-minutes">Phase 1 Meeting Minutes</a></li></ul></li><li><a href="#phase-2-milestone-plan--roadmap-tentative">Phase 2 Milestone Plan &amp; Roadmap (Tentative)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/alloy/" class="nav-home"></a></section><section class="finos finosBanner"><a href="https://www.finos.org"><img id="finosicon" src="https://alloy.finos.org/img/finos_wordmark.svg" height="75px" alt="FINOS" title="FINOS"/></a></section><section class="privacy finosBanner"><a href="https://www.finos.org/privacy-policy" target="_blank">Privacy Policy</a></section><section class="copyright">Copyright © 2020 PURE/Alloy</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
