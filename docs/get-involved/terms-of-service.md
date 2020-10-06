@@ -1,13 +1,13 @@
 ---
 id: terms-of-service
-title: FINOS Alloy Terms of Service
+title: FINOS Legend Terms of Service
 hide_title: true
 sidebar_label: Legal
 ---
-## FINOS Alloy Terms of Service
+## FINOS Legend Terms of Service
 
 
-The Alloy Pilot website and service located at https//alloy.finos.org/ (the “Service”) is operated by the Fintech Open Source Foundation (“FINOS,” “we,” or “us”). By registering for, using, or accessing the Service, you agree to be bound by these terms of service (“Terms”). If you don’t agree to these Terms, you must discontinue use of the Service.  If you have any questions about these terms, please contact us: FINOS, 330 Primrose Road, Burlingame, CA 94010, legal@finos.org.
+The Legend Evaluation website and service located at https//legend.finos.org/ (the “Service”) is operated by FINOS, a project of The Linux Foundation (“FINOS,” “we,” or “us”). By registering for, using, or accessing the Service, you agree to be bound by these terms of service (“Terms”). If you don’t agree to these Terms, you must discontinue use of the Service.  If you have any questions about these terms, please contact us: FINOS, 548 Market St, PMB 57274, San Francisco, California 94104-5401, legal@finos.org.
 
 1. Registration, Personal Information, and Privacy
 
@@ -20,6 +20,7 @@ The Alloy Pilot website and service located at https//alloy.finos.org/ (the “S
     1.4 You understand that the Service includes collaborative features that enable users to disclose information to one another and to modify data provided by other users. FINOS is not responsible if you disclose personal information to other users or for their use of your data.
     
     1.5 The Service is not intended for children under the age of 13. If we learn that any registered user of the Service is under the age of 13, it is our policy to disable the user’s account and to delete any personal information provided by that user. 
+
 2. User Content
 
     2.1 All information and content submitted by users of the Service (“User Content”) is the sole responsibility of the person who provides it; FINOS is not responsible for any User Content. FINOS reserves the right, subject to applicable law and its obligations to its customers, to remove User Content for any reason, including that it violates our Acceptable Use Policy. However, FINOS has no obligation to monitor, filter, or disable access to any User Content, and shall not be responsible if you encounter objectionable User Content on the Service.
@@ -64,7 +65,7 @@ The Alloy Pilot website and service located at https//alloy.finos.org/ (the “S
 
 5. Copyright Policy
 
-    5.1. FINOS responds to reports of copyright infringement according to the notice-and-takedown procedure provided by the Digital Millennium Copyright Act ("DMCA"). Our designated agent for copyright infringement notifications and counter-notifications is: Aaron Williamson, c/o Fintech Open Source Foundation, 330 Primrose Road, Burlingame, CA 94010, legal@finos.org.
+    5.1. FINOS responds to reports of copyright infringement according to the notice-and-takedown procedure provided by the Digital Millennium Copyright Act ("DMCA"). Our designated agent for copyright infringement notifications and counter-notifications is: Legal Department, The Linux Foundation, 548 Market St, PMB 57274, San Francisco, California 94104-5401, Phone: 4157239709, Email: legal@linuxfoundation.org
 
     5.2. Reporting copyright infringement
 
@@ -129,7 +130,7 @@ The Alloy Pilot website and service located at https//alloy.finos.org/ (the “S
 
 10. Miscellaneous Terms
 
-    10.1. Modifications to this Agreement. FINOS may occasionally revise these Terms. You can find the most recent version at https://alloy.finos.org/terms-of-service. By using the Service after a new version of these Terms becomes effective, you thereby agree to be bound by the revised Terms.
+    10.1. Modifications to this Agreement. FINOS may occasionally revise these Terms. You can find the most recent version at https://legend.finos.org/terms-of-service. By using the Service after a new version of these Terms becomes effective, you thereby agree to be bound by the revised Terms.
 
     10.2. Choice of Law. These Terms and the relationship between you and FINOS shall be governed by the laws of the State of California without regard to its conflict of law provisions and that any and all claims, causes of action, or disputes (regardless of theory) arising out of or relating to the Service, shall be brought exclusively in the courts located in the county of San Francisco or the U.S. District Court for the Northern District of California. You consent and waive any objection to the jurisdiction of and venue in these courts.
 
