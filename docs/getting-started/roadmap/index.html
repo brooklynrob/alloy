@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Roadmap · alloy</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Roadmap"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Roadmap · alloy"/><meta property="og:type" content="website"/><meta property="og:url" content="/https://brooklynrob.github.io/alloy/alloy/"/><meta property="og:description" content="# Roadmap"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/alloy/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-blue.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-89349362-7', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,500,700,900|Roboto+Condensed:400,500,700,900|Source+Code+Pro:400,500,700,900&amp;display=swap"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/alloy/js/scrollSpy.js"></script><link rel="stylesheet" href="/alloy/css/main.css"/><script src="/alloy/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/alloy/"><img class="logo" src="/alloy/img/alloy.svg" alt="alloy"/><h2 class="headerTitleWithLogo">alloy</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/intro-legend">Intro to Legend</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/alloy/docs/getting-started/roadmap">Roadmap</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/create-workspace">Create a workspace</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/create-model">Create a model</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/create-diagram">Create a diagram</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/edit-model">Edit a model</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/create-model-to-model-mapping">Create model-to-model mapping</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/legend-language">Legend language</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/released-functions">Released Functions</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/upcoming-functions">Upcoming Functions</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/review-and-commit-changes">Review and commit changes</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/get-involved">Get involved</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/roles">Roles</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/review-process">Review process</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/sync-changes-beyond-legend">Sync changes beyond Legend</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/contribute-code">Contribute code</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/contribute-documentation">Contribute documentation</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/report-bug">Report bug</a></li><li class="navListItem"><a class="navItem" href="/alloy/docs/getting-started/terms-of-service">Terms of service</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Roadmap</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="roadmap"></a><a href="#roadmap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Roadmap</h1>
+<h2><a class="anchor" aria-hidden="true" id="legend-pilot-phase-0-october-2019---january-2020---completed"></a><a href="#legend-pilot-phase-0-october-2019---january-2020---completed" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legend Pilot Phase 0 (October 2019 - January 2020) - <em>Completed</em></h2>
+<h3><a class="anchor" aria-hidden="true" id="phase-0-goals"></a><a href="#phase-0-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 0 Goals</h3>
+<ul>
+<li>Stand-up and deploy an external instance of Legend for shared modeling - <em>DONE</em></li>
+<li><a href="https://www.youtube.com/watch?v=fPUYUt9Yr_I">Open Source Strategy Forum announcement</a> of Goldman Sachs' intention to open source Legend and the associated roadmap for that work - <em>DONE</em></li>
+<li>Commence internal code evaluation and preparation for open sourcing - <em>DONE</em></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="legend-pilot-phase-1-january-to-september-2020---in-progress"></a><a href="#legend-pilot-phase-1-january-to-september-2020---in-progress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legend Pilot Phase 1 (January to September 2020) - <em>In progress</em></h2>
+<h3><a class="anchor" aria-hidden="true" id="phase-1-goals"></a><a href="#phase-1-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Goals</h3>
+<ul>
+<li><p><strong>Goal 1:</strong> Evaluate shared modeling using Legend and and define collaboration model for further model development</p>
+<ul>
+<li>Evaluate how shared modeling can work using Legend and define the best process to work together, by assessing:
+<ul>
+<li>Governance process</li>
+<li>Collaboration amongst banks</li>
+<li>Technical solution</li>
+</ul></li>
+<li>Success Criteria
+<ul>
+<li>Basic fluency in Legend by non-GS modelers using Legend</li>
+<li>Functional areas of interest identified and working groups to model in those areas commenced</li>
+<li>Feedback on Legend shared with Goldman development team such that said feedback can be incorporated, as feasible, into the version of Legend released as open source at the start of Phase 2</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Goal 2:</strong> Using Legend collectively develop a model or model extension</p>
+<ul>
+<li>Find a good use case, with propensity for value creation through shared modeling and data shaping, and then work on (i.e., model) something “production relevant”
+<ul>
+<li>Ideally shared models can and should also be contributed back to respective standards bodies such as ISDA for derivatives (e.g., proposed changes to the CDM)</li>
+<li>FINOS members and community can provide further momentum by implementing models and supporting standards by convention</li>
+<li>Stretch goal to submit changes back to respective standards body (ISDA) and, better still, see it accepted into the standard</li>
+</ul></li>
+<li>Success Criteria
+<ul>
+<li>Support of standards body (ISDA)</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Goal 3:</strong> Prepare Legend code base, build system, and stakeholders for open sourcing of code</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="phase-1-plan---overall"></a><a href="#phase-1-plan---overall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Plan - Overall</h3>
+<h4><a class="anchor" aria-hidden="true" id="launch-pilot-group"></a><a href="#launch-pilot-group" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Launch Pilot Group</h4>
+<ul>
+<li>Pilot Kick-off (January 29) - <em>Completed</em></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="modeling"></a><a href="#modeling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modeling</h4>
+<ul>
+<li>Import and ready ISDA CDM in Legend - <em>Completed</em></li>
+<li>Define, organize, and launch modeling working groups
+<ul>
+<li>FX Option - <em>Launched</em></li>
+<li>Commodities Reference Data - <em>Launched</em></li>
+<li>Sustainability / Renewable energy Working Group - <em>Proposed</em></li>
+</ul></li>
+<li>Define potential areas of further modeling collaboration after pilot ends
+<ul>
+<li>Consider relationship with other FINOS projects like Financial Objects</li>
+<li>Additional standards and/or standards bodies to collaborate with</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="fx-option-working-group-plan"></a><a href="#fx-option-working-group-plan" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FX Option Working Group Plan</h2>
+<h3><a class="anchor" aria-hidden="true" id="stage-1-42---5282020"></a><a href="#stage-1-42---5282020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 1 (4/2 - 5/28/2020)</h3>
+<p><strong>Milestone:</strong> One CDM FxOption model change - Outcome <em>[TBC]</em></p>
+<ul>
+<li>Products: Fx Vanilla Option, Fx Barrier Option</li>
+<li>Review FpML FxOption model against CDM and identify relevant vs unused attributes; for relevant attributes review the cardinality and data types</li>
+<li>Submit and test changes to model in Legend Studio</li>
+<li>Add agreed changes to CDM Rosetta for testing and consideration by the CDM Design WG</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="stage-2-64---6252020"></a><a href="#stage-2-64---6252020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 2 (6/4 - 6/25/2020)</h3>
+<p><strong>Milestone:</strong> One CDM FX lifecycle model change - Outcome <em>[TBC]</em></p>
+<ul>
+<li>Analyze the business events and primitive processes for 'Exercise', 'Expire' and any other applicable lifecycle events for Fx Vanilla Option</li>
+<li>Suggest and review new attributes for the model, considering validations/conditions are in line with CDM principles</li>
+<li>Submit and test changes to model in Legend Studio</li>
+<li>Add agreed changes to CDM Rosetta for testing and consideration by the CDM Design WG</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="stage-3-72---862020"></a><a href="#stage-3-72---862020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 3 (7/2 - 8/6/2020)</h3>
+<p><strong>Milestone:</strong> [TBC] - Outcome <em>[TBC]</em></p>
+<ul>
+<li>Analyze other use cases e.g. Fx Strategies, Asian features, exotics scenarios etc</li>
+<li>Suggest and review new attributes for the model, considering validations/conditions are in line with CDM principles</li>
+<li>Submit and test changes to model in Legend Studio</li>
+<li>Add agreed changes to CDM Rosetta for testing and consideration by the CDM Design WG</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="commodities-reference-data-working-group-plan"></a><a href="#commodities-reference-data-working-group-plan" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Commodities Reference Data Working Group Plan</h2>
+<h3><a class="anchor" aria-hidden="true" id="stage-1-48---5272020"></a><a href="#stage-1-48---5272020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 1 (4/8 - 5/27/2020)</h3>
+<p><strong>Milestone:</strong> Commodities Reference Data model proposal merge into Legend / Outcome: <em>Complete</em></p>
+<p><strong>Milestone:</strong> CDM Payout change to support Commodities vanilla scenario / Outcome: <em>[TBC]</em></p>
+<ul>
+<li>Product: WTI Fixed/Float Oil Swap.</li>
+<li>Review FpML and identify relevant v unused attributes; for relevant attributes review the cardinality and data types.</li>
+<li>Determine contractual data points v reference data points and how these two models should interact.</li>
+<li>Identify gaps in existing CDM model and make updates to cover the commodities fixed v float scenario.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="stage-2-63---6252020"></a><a href="#stage-2-63---6252020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 2 (6/3 - 6/25/2020)</h3>
+<p><strong>Milestone:</strong> Extend Commodities Reference Data model properties to capture relevant data that can be associated with a product / Outcome <em>[TBC]</em></p>
+<p><strong>Milestone:</strong> Capture extended Commodities use cases in the CDM model in Legend / Outcome: <em>[TBC]</em></p>
+<ul>
+<li>Agree on Reference Data model structure.</li>
+<li>Identify associated data that is required in the industry associated with a product.</li>
+<li>Review additional Commodities payout scenarios and look to factor into the CDM model in Legend.</li>
+<li>Agree on best way to represent Commodities payout in CDM, either as a distinct class, or combined with another existing payout.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="stage-3-71--852020"></a><a href="#stage-3-71--852020" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stage 3 (7/1 – 8/5/2020)</h3>
+<p><strong>Milestone #1:</strong> Finalise Reference Data Model construct and agree on next industry steps post pilot phase / Outcome: <em>[TBC]</em></p>
+<p><strong>Milestone #2:</strong> CDM Payout change to support Commodities vanilla scenario / Outcome: <em>[TBC]</em></p>
+<ul>
+<li>Review options and agree on next steps for Reference Data model.</li>
+<li>Finalise Commodities Payout features and merge into Legend.</li>
+<li>Review required qualifier functions for CDM and agree solution for Commodities.</li>
+<li>Add agreed changes to CDM Rosetta for testing and consideration by the CDM Design WG.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="open-source-preparations"></a><a href="#open-source-preparations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Open Source Preparations</h2>
+<h3><a class="anchor" aria-hidden="true" id="code-readinesshttpsgithubcomfinoslegendlabelscode20readiness"></a><a href="#code-readinesshttpsgithubcomfinoslegendlabelscode20readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/finos/legend/labels/Code%20Readiness">Code Readiness</a></h3>
+<ul>
+<li><a href="https://github.com/finos/legend/issues/119">Code Modulization</a></li>
+<li><a href="https://github.com/finos/legend/issues/127">Refactor Execution code to remove GS connection management</a> (GS)</li>
+<li><a href="https://github.com/finos/legend/issues/134">Migrate Engine to GitLab</a></li>
+<li><a href="https://github.com/finos/legend/issues/136">Re-name Legend in Studio code</a></li>
+<li><a href="https://github.com/finos/legend/issues/139">Re-name Legend to New Name in SDLC code</a></li>
+<li><a href="https://github.com/finos/legend/issues/140">Re-name Legend to New Name in PURE code</a></li>
+<li><a href="https://github.com/finos/legend/issues/141">Re-name Legend to New Name in Engine code</a></li>
+<li><a href="https://github.com/finos/legend/issues/142">Extract core PURE System ready for Open Sourcing</a></li>
+<li><a href="https://github.com/finos/legend/issues/145">Open Source Legend SDLC code </a></li>
+<li><a href="https://github.com/finos/legend/issues/146">Open Source Legend Execution code</a></li>
+<li><a href="https://github.com/finos/legend/issues/147">Open Source Legend Studio Code</a></li>
+<li><a href="https://github.com/finos/legend/issues/148">Open Source PURE Language</a></li>
+<li>Break into two distinct GitLab repos</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="build-readinesshttpsgithubcomfinoslegendlabelsbuild20readiness"></a><a href="#build-readinesshttpsgithubcomfinoslegendlabelsbuild20readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/finos/legend/labels/Build%20Readiness">Build Readiness</a></h3>
+<ul>
+<li><a href="https://github.com/finos/legend/issues/93">Define GitHub Actions for building and testing Docker images</a> (FINOS + GS)</li>
+<li><a href="https://github.com/finos/legend/issues/144">Deploying from external repo to GS works</a></li>
+<li><a href="https://github.com/finos/legend/issues/129">Test build and deploy works in open source environment for SDLC</a></li>
+<li><a href="https://github.com/finos/legend/issues/130">Build support for all test permutations</a></li>
+<li><a href="https://github.com/finos/legend/issues/131">Discuss how to manage GA releases</a></li>
+<li><a href="https://github.com/finos/legend/issues/132">Test build and deploy works in open source environment for Studio</a></li>
+<li><a href="https://github.com/finos/legend/issues/133">Test build and deploy works in open source environment for Engine</a></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="developer-readinesshttpsgithubcomfinoslegendlabelsdeveloper_readiness"></a><a href="#developer-readinesshttpsgithubcomfinoslegendlabelsdeveloper_readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/finos/legend/labels/developer_readiness">Developer Readiness</a></h3>
+<ul>
+<li><a href="https://github.com/finos/legend/issues/149">Define new code release process</a></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="communication-readinesshttpsgithubcomfinoslegendlabelscommunication_readiness"></a><a href="#communication-readinesshttpsgithubcomfinoslegendlabelscommunication_readiness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/finos/legend/labels/communication_readiness">Communication Readiness</a></h3>
+<ul>
+<li><p><a href="https://github.com/finos/legend/issues/137">External Communication Plan for new name</a></p></li>
+<li><p><a href="https://github.com/finos/legend/issues/26">Training Video Produced and Posted</a></p></li>
+<li><p><a href="https://github.com/finos/legend/issues/143">User guide: how to run your own on premise version</a></p></li>
+<li><p>Press Release Prepared and Embargoed</p></li>
+<li><p>Support Plan</p>
+<ul>
+<li>Escalation</li>
+<li>Coverage Model</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="phase-1-meeting-minutes"></a><a href="#phase-1-meeting-minutes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 1 Meeting Minutes</h2>
+<ul>
+<li><a href="https://github.com/finos/Legend/tree/master/meeting-minutes/general-meeting">Legend General Monthly Meeting Minutes</a></li>
+<li><a href="https://github.com/finos/Legend/tree/master/meeting-minutes/pilot-project-meeting-minutes">Legend Pilot Meeting Minutes</a></li>
+<li><a href="https://github.com/finos/Legend/tree/master/meeting-minutes/fx-options-wg">Legend FX Options WG Meeting Minutes</a></li>
+<li><a href="https://github.com/finos/Legend/tree/master/meeting-minutes/commodities-ref-data-wg">Legend Commodity Reference Data WG Meeting Minutes</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="legend-pilot-phase-2-september-2020---early-2021---yet-to-start"></a><a href="#legend-pilot-phase-2-september-2020---early-2021---yet-to-start" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legend Pilot Phase 2 (September 2020 - Early 2021) - Yet to Start</h2>
+<h3><a class="anchor" aria-hidden="true" id="phase-2-goals"></a><a href="#phase-2-goals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 2 Goals</h3>
+<ul>
+<li>Complete open sourcing of wave 1 of Legend code</li>
+<li>Further documentationa and training material</li>
+<li>Prepare for and wave 2 open sourcing of Legend code</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="phase-2-plan"></a><a href="#phase-2-plan" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 2 Plan</h3>
+<p><strong>Milestone 2.1:</strong> – <a href="https://github.com/finos/legend/milestone/5">Code Uplift</a></p>
+<p><strong>Milestone 2.2:</strong> – <a href="https://github.com/finos/legend/milestone/6"><em><strong>Code Release - 1st Wave (Target Summer - Early Fall 2020)</strong></em>.</a></p>
+<ul>
+<li><em>Code for SDLC, Execution, Studio, PURE System (tentative scope) made available in GitHub and/or GitLab under Apache 2.0 license</em>*</li>
+<li>CI build + release process</li>
+<li>Deploy pipeline from code to demo environement on FINOS infrastructure (legend.finos.org/studio)</li>
+</ul>
+<p><strong>Milestone 2.3:</strong> - More Legend Documentation](<a href="https://github.com/finos/legend/milestone/8">https://github.com/finos/legend/milestone/8</a>)</p>
+<ul>
+<li>Video tutorials for Studio</li>
+<li>Guide to building and deploying</li>
+<li>Guide to developing in Legend</li>
+</ul>
+<p><strong>Milestone 2.4:</strong>- Second batch of code open sourced](<a href="https://github.com/finos/legend/milestone/7">https://github.com/finos/legend/milestone/7</a>)</p>
+<ul>
+<li>Code for Cube, Graph, Services (tentative scope) made available in GitHub and/or GitLab under Apache 2.0 license
+<ul>
+<li><a href="https://github.com/finos/legend/issues/150">Open Source Services code</a></li>
+<li><a href="https://github.com/finos/legend/issues/151">Open Source Cube code</a></li>
+<li><a href="https://github.com/finos/legend/issues/152">Open Source Registry code</a></li>
+</ul></li>
+<li>Deploy demo database in demo environment in FINOS infrastructure to demonstrate execution</li>
+<li>Move instances to OpenShift (?)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="next-steps"></a><a href="#next-steps" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Next steps</h2>
+<ul>
+<li><a href="/alloy/docs/getting-started/create-model">Create a model</a></li>
+<li><a href="/alloy/docs/getting-started/create-diagram">Create a diagram</a></li>
+<li><a href="/alloy/docs/getting-started/edit-model">Edit a model</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/alloy/docs/getting-started/intro-legend"><span class="arrow-prev">← </span><span>Intro to Legend</span></a><a class="docs-next button" href="/alloy/docs/getting-started/create-workspace"><span>Create a workspace</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#legend-pilot-phase-0-october-2019---january-2020---completed">Legend Pilot Phase 0 (October 2019 - January 2020) - <em>Completed</em></a><ul class="toc-headings"><li><a href="#phase-0-goals">Phase 0 Goals</a></li></ul></li><li><a href="#legend-pilot-phase-1-january-to-september-2020---in-progress">Legend Pilot Phase 1 (January to September 2020) - <em>In progress</em></a><ul class="toc-headings"><li><a href="#phase-1-goals">Phase 1 Goals</a></li><li><a href="#phase-1-plan---overall">Phase 1 Plan - Overall</a></li></ul></li><li><a href="#fx-option-working-group-plan">FX Option Working Group Plan</a><ul class="toc-headings"><li><a href="#stage-1-42---5282020">Stage 1 (4/2 - 5/28/2020)</a></li><li><a href="#stage-2-64---6252020">Stage 2 (6/4 - 6/25/2020)</a></li><li><a href="#stage-3-72---862020">Stage 3 (7/2 - 8/6/2020)</a></li></ul></li><li><a href="#commodities-reference-data-working-group-plan">Commodities Reference Data Working Group Plan</a><ul class="toc-headings"><li><a href="#stage-1-48---5272020">Stage 1 (4/8 - 5/27/2020)</a></li><li><a href="#stage-2-63---6252020">Stage 2 (6/3 - 6/25/2020)</a></li><li><a href="#stage-3-71--852020">Stage 3 (7/1 – 8/5/2020)</a></li></ul></li><li><a href="#open-source-preparations">Open Source Preparations</a><ul class="toc-headings"><li><a href="#code-readinesshttpsgithubcomfinoslegendlabelscode20readiness"><a href="https://github.com/finos/legend/labels/Code%20Readiness">Code Readiness</a></a></li><li><a href="#build-readinesshttpsgithubcomfinoslegendlabelsbuild20readiness"><a href="https://github.com/finos/legend/labels/Build%20Readiness">Build Readiness</a></a></li><li><a href="#developer-readinesshttpsgithubcomfinoslegendlabelsdeveloper_readiness"><a href="https://github.com/finos/legend/labels/developer_readiness">Developer Readiness</a></a></li><li><a href="#communication-readinesshttpsgithubcomfinoslegendlabelscommunication_readiness"><a href="https://github.com/finos/legend/labels/communication_readiness">Communication Readiness</a></a></li></ul></li><li><a href="#phase-1-meeting-minutes">Phase 1 Meeting Minutes</a></li><li><a href="#legend-pilot-phase-2-september-2020---early-2021---yet-to-start">Legend Pilot Phase 2 (September 2020 - Early 2021) - Yet to Start</a><ul class="toc-headings"><li><a href="#phase-2-goals">Phase 2 Goals</a></li><li><a href="#phase-2-plan">Phase 2 Plan</a></li></ul></li><li><a href="#next-steps">Next steps</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/alloy/" class="nav-home"></a></section><section class="finos finosBanner"><a href="https://www.finos.org"><img id="finosicon" src="https://alloy.finos.org/img/finos_wordmark.svg" height="75px" alt="FINOS" title="FINOS"/></a></section><section class="privacy finosBanner"><a href="https://www.finos.org/privacy-policy" target="_blank">Privacy Policy</a></section><section class="copyright">Copyright © 2020 PURE/Alloy</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
